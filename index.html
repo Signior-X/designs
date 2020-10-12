@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Using CSS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    #main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background: #8dddd6;
+    }
+
+    .paper {
+      width: 500px;
+      height: 800px;
+      background: rgb(15, 16, 80);
+      color: white;
+      padding: 12px;
+      box-shadow: -1px 1px 19px -5px rgba(0, 0, 0, 0.59);
+      display: flex;
+      flex-flow: column;
+      flex-direction: column;
+    }
+
+    .head {
+      margin: 32px 32px 16px 32px;
+      font-weight: 900;
+      font-size: 40px;
+    }
+
+    .head-outlined {
+      padding: 4px 12px;
+      border-left: white 3px solid;
+    }
+    .mid {
+      padding: 32px 48px 16px 0;
+    }
+    .end {
+      margin: 16px 8px 16px 8px;
+      border-radius: 8px;
+      padding: 12px;
+      background: #0f2d53;
+      font-weight: 700;
+      font-size: small;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .row {
+      display: flex;
+    }
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+    }
+    .col div {
+      padding: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div class="paper">
+      <div class="head">
+        <div class="head-outlined">
+          <span>ECell</span>
+          <span style="font-size: 24px;">presents</span>
+          <span style="display: block; font-size: 48px;">IPL Auction</span>
+        </div>
+        <div style="padding: 0 16px; font-size: 28px;">Online</div>
+      </div>
+      <div class="mid">
+        <img src="/22060.jpg" style="width: 100%;">
+      </div>
+      <div class="end row">
+        <div class="col">
+          <div>auctiongame.github.io/intro</div>
+          <div>Auction Date: <span style="color: rgb(247, 208, 34);">5pm, 13th Sept</span></div>
+        </div>
+        <div class="row" style="margin-left: auto;">
+          <div class="col" style="padding: 0 16px;">
+            <div>Pranshu</div>
+            <div>Khubi</div>
+          </div>
+          <div class="col" style="color: rgb(247, 208, 34);">
+            <div>1234567890</div>
+            <div>1234567890</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
