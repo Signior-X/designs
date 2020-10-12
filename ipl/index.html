@@ -46,6 +46,7 @@
       margin: 32px 32px 0px 32px;
       font-weight: 900;
       font-size: 40px;
+      animation: fadeInRight 1s;
     }
 
     .head-outlined {
@@ -63,6 +64,7 @@
     }
     .end {
       margin: 16px 8px 16px 8px;
+      animation: fadeInUp 1s;
     }
     .row {
       display: flex;
@@ -74,6 +76,36 @@
     }
     .col div {
       padding: 2px;
+    }
+
+    #aimg {
+      animation: myA 2s;
+    }
+    #price {
+      animation: fadeInLeft 1s;
+    }
+
+    @keyframes myA {
+      0% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeInLeft {
+      0% {
+        margin-right: -100px;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        margin-top: -100px;
+      }
+    }
+    @keyframes fadeInRight {
+      0% {
+        margin-left: -100px;
+      }
     }
   </style>
 </head>
@@ -90,8 +122,8 @@
         <div style="padding: 0 16px; font-size: 28px;">Online</div>
       </div>
       <div class="mid">
-        <img src="22060-removebg-preview.png" style="width: 100%; margin-top: -56px; margin-left: -24px;">
-        <div class="abs box">
+        <img id="aimg" src="22060-removebg-preview.png" style="width: 100%; margin-top: -56px; margin-left: -24px;">
+        <div id="price" class="abs box">
           <div class="col">Prizes Worth</div>
           <div class="col">Rs. 3000</div>
         </div>
