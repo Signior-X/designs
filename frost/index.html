@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frosthack Poster Using CSS</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    #main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* width: 100vw; */
+      height: 100vh;
+      min-height: 800px;
+      background: #8dddd6;
+      font-family: 'Hachi Maru Pop', cursive;
+    }
+
+    .paper {
+      width: 500px;
+      height: 500px;
+      background: url('republic.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: rgb(54, 170, 238);
+      padding: 12px;
+      box-shadow: -1px 1px 19px -5px rgba(0, 0, 0, 0.59);
+      display: flex;
+      flex-flow: column;
+      flex-direction: column;
+      position: relative;
+    }
+
+    #frosthack-logo {
+      animation: myA 1s;
+      position: absolute;
+      left: 16px;
+    }
+
+    #frosthack-logo img {
+      width: 144px;
+    }
+
+    .wishes {
+      margin-left: 12px;
+      font-size: 44px;
+      text-align: end;
+      line-height: 50px;
+      margin-top: -12px;
+    }
+
+    #frosthack-link {
+      position: absolute;
+      bottom: 12px;
+      font-family: 'Balsamiq Sans', cursive;
+      vertical-align: bottom;
+    }
+
+    @keyframes myA {
+      0% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeInLeft {
+      0% {
+        margin-right: -100px;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        margin-top: -100px;
+      }
+    }
+    @keyframes fadeInRight {
+      0% {
+        margin-left: -100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div class="paper">
+      <div id="frosthack-logo">
+        <img src="forsthack.png">
+        <div class="wishes">Wishes <br> you </div>
+      </div>
+      <div id="frosthack-link">
+        <img src="tap.svg" style="width: 24px;"></img>
+        <a style="color: rgb(255 255 255 / 81%); font-size: 22px; text-decoration: none;" href="https://frosthack.com">https://frosthack.com</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
